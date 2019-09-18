@@ -1,13 +1,13 @@
 
 Pod::Spec.new do |s|
   s.name         = "JXPagingView"
-  s.version = "1.1.1"
+  s.version = "2333.3.3"
   s.summary      = "类似微博主页、简书主页等效果。多页面嵌套，既可以上下滑动，也可以左右滑动切换页面。支持HeaderView悬浮、支持下拉刷新、上拉加载更多。"
-  s.homepage     = "https://github.com/pujiaxin33/JXPagingView"
+  s.homepage     = "https://github.com/dingdaojun/JXPagingView"
   s.author       = { "pujiaxin33" => "317437084@qq.com" }
   s.platform     = :ios, "8.0"
   s.swift_version = "4.2"
-  s.source       = { :git => "https://github.com/pujiaxin33/JXPagingView.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/dingdaojun/JXPagingView.git", :tag => "#{s.version}" }
   s.source_files  = "JXPagingView-Swift", "JXPagingView-Swift/**/*.swift"
   s.license      = "MIT"
   s.subspec 'Pager' do |pager|
