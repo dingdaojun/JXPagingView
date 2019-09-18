@@ -126,6 +126,20 @@
  */
 - (void)mainTableViewDidScroll:(UIScrollView *)scrollView;
 
+/**
+ mainTableView的开始拖拽回调
+
+ @param scrollView mainTableView
+ */
+- (void)mainTableViewWillBeginDragging:(UIScrollView *)scrollView;
+
+/**
+ mainTableView的停止滚动回调
+
+ @param scrollView mainTableView
+ */
+- (void)mainTableViewDidEndScrollingAnimation:(UIScrollView *)scrollView;
+
 @end
 
 @interface JXPagerView : UIView

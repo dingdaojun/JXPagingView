@@ -215,9 +215,19 @@
     }
 }
 
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
+    if ([self.delegate respondsToSelector:@selector(mainTableViewWillBeginDragging:)]) {
+        [self.delegate mainTableViewWillBeginDragging:scrollView];
+    }
+}
+
 - (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView {
     if (self.isListHorizontalScrollEnabled) {
         self.listContainerView.collectionView.scrollEnabled = YES;
+    }
+
+    if ([self.delegate respondsToSelector:@selector(mainTableViewDidEndScrollingAnimation:)]) {
+        [self.delegate mainTableViewDidEndScrollingAnimation:scrollView];
     }
 }
 
