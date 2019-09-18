@@ -138,7 +138,7 @@
 
  @param scrollView mainTableView
  */
-- (void)mainTableViewDidEndScrollingAnimation:(UIScrollView *)scrollView;
+- (void)mainTableViewDidEndScroll:(UIScrollView *)scrollView;
 
 @end
 
